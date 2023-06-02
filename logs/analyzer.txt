@@ -65,3 +65,7 @@ Content-Type: application/vscode-jsonrpc; charset=utf-8
 [2:55:02 PM] [Analyzer] [Info] <== {"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///C:/Users/User/Desktop/graphql_todo/lib/main.dart"}}
 [2:55:11 PM] [Analyzer] [Info] <== Content-Length: 161
 Content-Type: application/vscode-jsonrpc; charset=utf-8
+[2:55:11 PM] [Analyzer] [Info] <== {"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///C:/Users/User/Desktop/graphql_todo/test/widget_test.dart"}}
+[2:55:13 PM] [Analyzer] [Info] <== Content-Length: 93
+Content-Type: application/vscode-jsonrpc; charset=utf-8
+[2:55:13 PM] [Analyzer] [Info] <== {"jsonrpc":"2.0","method":"$/progress","params":{"token":"ANALYZING","value":{"kind":"end"}}}

@@ -205,3 +205,5 @@ NO_PROXY: undefined
 [2:54:16 PM] [General] [Info] Checking 1 projects for supported platforms
 [2:54:16 PM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
 [2:54:31 PM] [General] [Info] Failed to send analytics, disabling for session: Error: connect ETIMEDOUT 142.250.195.110:443
+[3:00:08 PM] [General] [Info] Took 38ms to search for projects (5 levels)
+[3:00:08 PM] [General] [Info] Took 3ms to filter out excluded projects (0 exclusion rules)
