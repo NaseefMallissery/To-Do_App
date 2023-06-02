@@ -207,3 +207,9 @@ NO_PROXY: undefined
 [2:54:31 PM] [General] [Info] Failed to send analytics, disabling for session: Error: connect ETIMEDOUT 142.250.195.110:443
 [3:00:08 PM] [General] [Info] Took 38ms to search for projects (5 levels)
 [3:00:08 PM] [General] [Info] Took 3ms to filter out excluded projects (0 exclusion rules)
+[3:04:39 PM] [General] [Info] Pubspec C:\Users\User\Desktop\graphql_todo\pubspec.yaml was modified
+[3:04:40 PM] [General] [Info] Returning cached results for project search
+[3:04:40 PM] [General] [Info] Version last used for Pub is 3.0.0 (3.0.0), current is 3.0.2 (3.0.0)
+[3:04:40 PM] [General] [Info] Found 1 folders requiring "pub get" or "pub upgrade":
+    C:\Users\User\Desktop\graphql_todo (get: true, upgrade: false, reason: pubspec.yaml was modified (Fri Jun 02 2023 15:04:39 GMT+0530 (India Standard Time)) more recently than pubspec.lock (Fri Jun 02 2023 14:48:37 GMT+0530 (India Standard Time)))
+[3:04:49 PM] [General] [Info] Returning cached results for project search
