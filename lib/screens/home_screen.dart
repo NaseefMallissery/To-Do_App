@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final todoControllers = Get.put(ToDoControllers());
+    final todoControllers = Get.find<ToDoControllers>();
     return Scaffold(
       appBar: AppBar(
         title: text(
@@ -29,35 +29,53 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          Expanded(
-            child: ListView.builder(
-              itemCount: 100,
-              itemBuilder: (context, index) {
-                return Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: customContainer(
-                    color: Colors.blue.shade100,
-                    height: Get.height * 0.1,
-                    width: Get.width,
-                    child: Card(
-                      child: ListTile(
-                        leading: text(content: 'Id:${index + 1}'),
-                        title: text(content: 'tilte will show here'),
-                        trailing: icon(
-                          iconData: Icons.delete_forever,
-                          color: Colors.red,
+      body: todoControllers.isLoading.value == true
+          ? const Center(child: CircularProgressIndicator())
+          : Column(
+              children: [
+                Expanded(
+                  child: ListView.builder(
+                    itemCount: todoControllers.allTodos.length,
+                    itemBuilder: (context, index) {
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: customContainer(
+                          color: Colors.blue.shade100,
+                          height: Get.height * 0.1,
+                          width: Get.width,
+                          child: Card(
+                            child: ListTile(
+                              leading: text(
+                                  content: todoControllers.allTodos[index].id
+                                      .toString()),
+                              title: text(
+                                  content:
+                                      todoControllers.allTodos[index].title),
+                              subtitle: text(
+                                  content: todoControllers
+                                      .allTodos[index].createdAt
+                                      .toString()),
+                              trailing: InkWell(
+                                onTap: () async{
+                                  todoControllers.deleteTodo(
+                                      todoControllers.allTodos[index].id,
+                                      index);
+                                      await todoControllers.getTodos();
+                                },
+                                child: icon(
+                                  iconData: Icons.delete_forever,
+                                  color: Colors.red,
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
+                      );
+                    },
                   ),
-                );
-              },
+                ),
+              ],
             ),
-          ),
-        ],
-      ),
     );
   }
 }

@@ -5,6 +5,20 @@ query getTodo {
     id
     title
     is_completed
+    created_at
+  }
+}
+''';
+
+  static const deleteTodo = '''
+mutation deleteTask(\$id: Int!) {
+  delete_todos(where: {id: {_eq: \$id}}){
+    affected_rows
+    returning{
+      id
+      title
+      
+    }
   }
 }
 ''';
