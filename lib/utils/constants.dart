@@ -9,5 +9,5 @@ class AppUrl {
 class AppColors {
   static final primaryColor = Colors.blueGrey[900];
   static const whiteColor=Colors.white;
-  static const blackSColor=Colors.black;
+  static const blackColor=Colors.black;
 }

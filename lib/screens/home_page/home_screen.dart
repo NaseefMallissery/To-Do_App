@@ -4,6 +4,7 @@ import 'package:graphql_todo/controllers/todo_controller.dart';
 import 'package:graphql_todo/utils/constants.dart';
 import 'package:graphql_todo/utils/reusables.dart';
 
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -12,6 +13,7 @@ class HomePage extends StatelessWidget {
     final todoControllers = Get.find<ToDoControllers>();
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: text(
           content: "Todo App",
           color: AppColors.whiteColor,
@@ -22,7 +24,10 @@ class HomePage extends StatelessWidget {
         backgroundColor: AppColors.primaryColor,
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              // Get.to(const AddNewTodo());
+              todoControllers.showDialogueBox();
+            },
             icon: icon(
               iconData: Icons.edit,
             ),
@@ -49,17 +54,18 @@ class HomePage extends StatelessWidget {
                               width: Get.width,
                               child: Card(
                                 child: ListTile(
-                                  leading: text(
-                                      content: todoControllers
-                                          .allTodos[index].id
-                                          .toString()),
                                   title: text(
-                                      content: todoControllers
-                                          .allTodos[index].title),
+                                      content:
+                                          todoControllers.allTodos[index].title,
+                                      fontWeight: FontWeight.w500,
+                                      size: 18),
                                   subtitle: text(
-                                      content: todoControllers
-                                          .allTodos[index].createdAt
-                                          .toString()),
+                                    content: todoControllers
+                                        .allTodos[index].createdAt
+                                        .toString(),
+                                    size: 12,
+                                    fontWeight: FontWeight.w400,
+                                  ),
                                   trailing: InkWell(
                                     onTap: () async {
                                       todoControllers.deleteTodo(

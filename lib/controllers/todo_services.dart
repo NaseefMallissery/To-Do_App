@@ -50,4 +50,36 @@ class ToDoServices {
       log(e.message.toString());
     }
   }
+
+  addTodos(String todos) async {
+    try {
+      dio.Response response = await graphqlClient.post('', data: {
+        "query": Queries.addTodo,
+        "variables": {"title": todos}
+      });
+      if (response.statusCode == 200) {
+        return response.data;
+      } else {
+        return null;
+      }
+    } on dio.DioError catch (e) {
+      log(e.message.toString());
+    }
+  }
+
+  updateTodo(int id) async {
+    try {
+      dio.Response response = await graphqlClient.post('', data: {
+        "query": Queries.updateTodo,
+        "variables": {"id": id}
+      });
+      if (response.statusCode == 200) {
+        return response;
+      } else {
+        return null;
+      }
+    } on dio.DioError catch (e) {
+      log(e.message.toString());
+    }
+  }
 }
