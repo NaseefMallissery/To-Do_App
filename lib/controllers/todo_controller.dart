@@ -22,16 +22,23 @@ class ToDoControllers extends GetxController {
   }
 
   getTodos() async {
-    isLoading(true);
+    isLoading.toggle();
     final response = await ToDoServices().getTodos();
     if (response != null) {
-      isLoading(false);
+      isLoading.toggle();
       log(response.toString());
-      todoList((response as List).map((e) => TodoModel.fromJson(e)).toList());
+      todoList(
+        (response as List).map((e) => TodoModel.fromJson(e)).toList(),
+      );
 
       allTodos.clear();
       for (var element in todoList) {
+        // if (element.isCompleted == false) {
         allTodos.add(element);
+
+        // } else {
+        //   updatedTodos.add(element);
+        // }
       }
     } else {
       log('Todo is Null');
@@ -42,16 +49,20 @@ class ToDoControllers extends GetxController {
     final response = await ToDoServices().delteTodo(id);
     if (response.statusCode == 200) {
       allTodos.removeAt(index);
+
       Get.snackbar(
         "Deleted",
-        "Your data deleted permanently",
+        "Your task deleted",
         colorText: AppColors.whiteColor,
         duration: const Duration(seconds: 2),
         backgroundColor: AppColors.primaryColor,
+        snackPosition: SnackPosition.BOTTOM,
       );
-      Get.to(const HomePage());
+
+      // Get.to(() => const HomePage());
     }
   }
+
 ///////////////////////////////
   showDialogueBox() {
     return Get.defaultDialog(
@@ -94,7 +105,6 @@ class ToDoControllers extends GetxController {
             return;
           } else {
             addTodo();
-            Get.off(const HomePage());
           }
         },
         child: text(
@@ -106,9 +116,8 @@ class ToDoControllers extends GetxController {
   }
 
   addTodo() async {
-      log('AddTodo called');
+    log('AddTodo called');
     if (textController.text.isNotEmpty) {
-
       final response = await ToDoServices().addTodos(textController.text);
       final id = response['data']['insert_todos']['returning'][0]['id'];
       allTodos.insert(
@@ -123,12 +132,16 @@ class ToDoControllers extends GetxController {
     } else {
       log('TextFiels is empty');
     }
+    Get.offAll(() => const HomePage());
     textController.clear();
-    // Get.off(() => const HomePage());
-    Get.snackbar("Done", "Todo added successfully",
-        duration: const Duration(seconds: 2),
-        backgroundColor: AppColors.primaryColor,
-        colorText: AppColors.whiteColor);
+    Get.snackbar(
+      "Done",
+      "New Task added successfully",
+      duration: const Duration(seconds: 2),
+      backgroundColor: AppColors.primaryColor,
+      colorText: AppColors.whiteColor,
+      snackPosition: SnackPosition.BOTTOM,
+    );
   }
 
   ////////////////////////
