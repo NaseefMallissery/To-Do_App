@@ -29,3 +29,73 @@ Mon Jun 05 2023 [10:03:50 GMT+0530 (India Standard Time)] Log file started
 [10:04:15 AM] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
 [10:04:17 AM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"chrome","name":"Chrome","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null,"sdk":"Google Chrome 113.0.5672.129","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":false,"hardwareRendering":true,"startPaused":true}}}]
 [10:04:17 AM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"edge","name":"Edge","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null,"sdk":"Microsoft Edge 114.0.1823.37","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":false,"hardwareRendering":true,"startPaused":true}}}]
+[10:05:32 AM] [FlutterDaemon] [Info] ==> [{"id":"4","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[10:05:32 AM] [FlutterDaemon] [Info] <== [{"id":"4","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[10:05:32 AM] [FlutterDaemon] [Info] ==> [{"id":"5","method":"emulator.getEmulators"}]
+[10:05:32 AM] [FlutterDaemon] [Info] <== [{"id":"5","result":[{"id":"Pixel_3_API_30","name":"Pixel 3 API 30","category":"mobile","platformType":"android"}]}]
+[10:05:34 AM] [FlutterDaemon] [Info] ==> [{"id":"6","method":"emulator.launch","params":{"emulatorId":"Pixel_3_API_30","coldBoot":false}}]
+[10:05:37 AM] [FlutterDaemon] [Info] <== [{"id":"6"}]
+[10:05:55 AM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"emulator-5554","name":"emulator-5554","platform":"android-x86","emulator":true,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":"Pixel_3_API_30","sdk":"Android 11 (API 30)","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":true,"fastStart":true,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
+[10:05:55 AM] [FlutterDaemon] [Info] ==> [{"id":"7","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[10:05:55 AM] [FlutterDaemon] [Info] <== [{"id":"7","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[10:06:08 AM] [FlutterDaemon] [Info] ==> [{"id":"8","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[10:06:08 AM] [FlutterDaemon] [Info] <== [{"id":"8","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[10:06:08 AM] [FlutterDaemon] [Info] ==> [{"id":"9","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[10:06:08 AM] [FlutterDaemon] [Info] <== [{"id":"9","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)] lib/controllers/todo_controller.dart:10:10: Error: Type 'ToDoModel' not found.
+  RxList<ToDoModel> todoList = <ToDoModel>[].obs;
+         ^^^^^^^^^
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)] lib/controllers/todo_controller.dart:11:10: Error: Type 'ToDoModel' not found.
+  RxList<ToDoModel> toDoListDone = <ToDoModel>[].obs;
+         ^^^^^^^^^
+lib/controllers/todo_controller.dart:12:10: Error: Type 'ToDoModel' not found.
+  RxList<ToDoModel> toDoListnotDone = <ToDoModel>[].obs;
+         ^^^^^^^^^
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)] lib/controllers/todo_controller.dart:10:10: Error: 'ToDoModel' isn't a type.
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)]   RxList<ToDoModel> todoList = <ToDoModel>[].obs;
+         ^^^^^^^^^
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)] lib/controllers/todo_controller.dart:10:33: Error: 'ToDoModel' isn't a type.
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)]   RxList<ToDoModel> todoList = <ToDoModel>[].obs;
+                                ^^^^^^^^^
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)] lib/controllers/todo_controller.dart:11:10: Error: 'ToDoModel' isn't a type.
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)]   RxList<ToDoModel> toDoListDone = <ToDoModel>[].obs;
+         ^^^^^^^^^
+lib/controllers/todo_controller.dart:11:37: Error: 'ToDoModel' isn't a type.
+  RxList<ToDoModel> toDoListDone = <ToDoModel>[].obs;
+                                    ^^^^^^^^^
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)] lib/controllers/todo_controller.dart:12:10: Error: 'ToDoModel' isn't a type.
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)]   RxList<ToDoModel> toDoListnotDone = <ToDoModel>[].obs;
+         ^^^^^^^^^
+lib/controllers/todo_controller.dart:12:40: Error: 'ToDoModel' isn't a type.
+  RxList<ToDoModel> toDoListnotDone = <ToDoModel>[].obs;
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)]                                        ^^^^^^^^^
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)] lib/controllers/todo_controller.dart:25:46: Error: The getter 'ToDoModel' isn't defined for the class 'ToDoControllers'.
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)]  - 'ToDoControllers' is from 'package:graphql_todo/controllers/todo_controller.dart' ('lib/controllers/todo_controller.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'ToDoModel'.
+      todoList((response as List).map((e) => ToDoModel.fromJson(e)).toList());
+[11:10:14 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)]                                              ^^^^^^^^^
+[11:38:16 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)] lib/screens/home_screen.dart:38:48: Error: The getter 'toDoListnotDone' isn't defined for the class 'ToDoControllers'.
+ - 'ToDoControllers' is from 'package:graphql_todo/controllers/todo_controller.dart' ('lib/controllers/todo_controller.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'toDoListnotDone'.
+                    itemCount: todoControllers.toDoListnotDone.length,
+[11:38:16 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)]                                                ^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:50:40: Error: The getter 'toDoListnotDone' isn't defined for the class 'ToDoControllers'.
+ - 'ToDoControllers' is from 'package:graphql_todo/controllers/todo_controller.dart' ('lib/controllers/todo_controller.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'toDoListnotDone'.
+                                      .toDoListnotDone[index].id
+                                       ^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:54:40: Error: The getter 'toDoListnotDone' isn't defined for the class 'ToDoControllers'.
+ - 'ToDoControllers' is from 'package:graphql_todo/controllers/todo_controller.dart' ('lib/controllers/todo_controller.dart').
+[11:38:16 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)] Try correcting the name to the name of an existing getter, or defining a getter or field named 'toDoListnotDone'.
+                                      .toDoListnotDone[index].title),
+                                       ^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:57:40: Error: The getter 'toDoListnotDone' isn't defined for the class 'ToDoControllers'.
+ - 'ToDoControllers' is from 'package:graphql_todo/controllers/todo_controller.dart' ('lib/controllers/todo_controller.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'toDoListnotDone'.
+                                      .toDoListnotDone[index].createdAt
+                                       ^^^^^^^^^^^^^^^
+[12:33:39 PM] [VmService] [Error] [Flutter (Pixel 3 API 30)] Cannot add breakpoint
+[12:34:04 PM] [FlutterDaemon] [Info] ==> [{"id":"10","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[12:34:05 PM] [FlutterDaemon] [Info] <== [{"id":"10","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[12:34:05 PM] [FlutterDaemon] [Info] ==> [{"id":"11","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[12:34:05 PM] [FlutterDaemon] [Info] <== [{"id":"11","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]

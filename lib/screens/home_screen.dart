@@ -31,51 +31,56 @@ class HomePage extends StatelessWidget {
       ),
       body: todoControllers.isLoading.value == true
           ? const Center(child: CircularProgressIndicator())
-          : Column(
-              children: [
-                Expanded(
-                  child: ListView.builder(
-                    itemCount: todoControllers.allTodos.length,
-                    itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: customContainer(
-                          color: Colors.blue.shade100,
-                          height: Get.height * 0.1,
-                          width: Get.width,
-                          child: Card(
-                            child: ListTile(
-                              leading: text(
-                                  content: todoControllers.allTodos[index].id
-                                      .toString()),
-                              title: text(
-                                  content:
-                                      todoControllers.allTodos[index].title),
-                              subtitle: text(
-                                  content: todoControllers
-                                      .allTodos[index].createdAt
-                                      .toString()),
-                              trailing: InkWell(
-                                onTap: () async{
-                                  todoControllers.deleteTodo(
-                                      todoControllers.allTodos[index].id,
-                                      index);
+          : todoControllers.allTodos.isEmpty
+              ? Center(
+                  child: text(content: "No Todos added"),
+                )
+              : Column(
+                  children: [
+                    Expanded(
+                      child: ListView.builder(
+                        itemCount: todoControllers.allTodos.length,
+                        itemBuilder: (context, index) {
+                          return Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: customContainer(
+                              color: Colors.blue.shade100,
+                              height: Get.height * 0.1,
+                              width: Get.width,
+                              child: Card(
+                                child: ListTile(
+                                  leading: text(
+                                      content: todoControllers
+                                          .allTodos[index].id
+                                          .toString()),
+                                  title: text(
+                                      content: todoControllers
+                                          .allTodos[index].title),
+                                  subtitle: text(
+                                      content: todoControllers
+                                          .allTodos[index].createdAt
+                                          .toString()),
+                                  trailing: InkWell(
+                                    onTap: () async {
+                                      todoControllers.deleteTodo(
+                                          todoControllers.allTodos[index].id,
+                                          index);
                                       await todoControllers.getTodos();
-                                },
-                                child: icon(
-                                  iconData: Icons.delete_forever,
-                                  color: Colors.red,
+                                    },
+                                    child: icon(
+                                      iconData: Icons.delete_forever,
+                                      color: Colors.red,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ),
-                      );
-                    },
-                  ),
+                          );
+                        },
+                      ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
     );
   }
 }

@@ -7,5 +7,6 @@ class AllBindings extends Bindings {
     Get.lazyPut<ToDoControllers>(
       () => ToDoControllers(),
     );
+  
   }
 }

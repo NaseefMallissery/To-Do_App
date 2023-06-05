@@ -1,6 +1,7 @@
 import 'dart:developer';
 import 'package:get/get.dart';
 import 'package:graphql_todo/models/todo_model.dart';
+import 'package:graphql_todo/screens/home_screen.dart';
 import 'package:graphql_todo/utils/constants.dart';
 import 'todo_services.dart';
 
@@ -19,8 +20,10 @@ class ToDoControllers extends GetxController {
     isLoading(true);
     final response = await ToDoServices().getTodos();
     if (response != null) {
-      todoList((response as List).map((e) => TodoModel.fromJson(e)).toList());
       isLoading(false);
+      log(response.toString());
+      todoList((response as List).map((e) => TodoModel.fromJson(e)).toList());
+
       allTodos.clear();
       for (var element in todoList) {
         allTodos.add(element);
@@ -34,7 +37,6 @@ class ToDoControllers extends GetxController {
     final response = await ToDoServices().delteTodo(id);
     if (response.statusCode == 200) {
       allTodos.removeAt(index);
-      await getTodos();
       Get.snackbar(
         "Deleted",
         "Your data deleted permanently",
@@ -42,6 +44,7 @@ class ToDoControllers extends GetxController {
         duration: const Duration(seconds: 1),
         backgroundColor: AppColors.primaryColor,
       );
+      Get.to(const HomePage());
     }
   }
 

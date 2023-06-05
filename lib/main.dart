@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graphql_todo/screens/bindings/all_bindings.dart';
-import 'screens/home_screen.dart';
+import 'package:graphql_todo/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
