@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:graphql_todo/utils/constants.dart';
+// import 'package:screen_utils/screen_utils.dart';
 
 Text text({
   required String content,
@@ -9,6 +10,7 @@ Text text({
   FontWeight? fontWeight = FontWeight.w400,
   TextOverflow? overflow = TextOverflow.ellipsis,
   int? maxLines = 1,
+  bool lineThrough=false,
 }) {
   return Text(
     content,
@@ -19,6 +21,11 @@ Text text({
       fontSize: size,
       fontFamily: fontFamily,
       fontWeight: fontWeight,
+      decoration:
+      lineThrough==false?
+      TextDecoration.none
+      :
+       TextDecoration.lineThrough,
     ),
   );
 }

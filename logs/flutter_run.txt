@@ -1,4 +1,0 @@
-[11:09:02 am]: Spawning C:\Users\User\Downloads\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9100/","--target","lib\\main.dart"]
-[11:09:02 am]: ..  in C:\Users\User\Desktop\graphql_todo
-[11:09:02 am]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
-[11:09:02 am]: PID: 8472

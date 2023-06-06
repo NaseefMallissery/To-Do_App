@@ -22,7 +22,6 @@ class ToDoControllers extends GetxController {
 
   getTodos() async {
     isLoading.toggle();
-    log('entered getTodo');
     final response = await ToDoServices().getTodos();
     if (response != null) {
       isLoading.toggle();
@@ -34,15 +33,13 @@ class ToDoControllers extends GetxController {
       updatedTodos.clear();
       for (var element in todoList) {
         if (element.isCompleted == false) {
-        //   log('element update');               
           allTodos.add(element);
-        }
-        else {
+        } else {
           updatedTodos.add(element);
-        }                                                                                                                          
-      }  
+        }
+      }
     } else {
-      log('Todo is Null');
+      log('response is Null');
     }
   }
 
@@ -59,12 +56,11 @@ class ToDoControllers extends GetxController {
         backgroundColor: AppColors.primaryColor,
         snackPosition: SnackPosition.BOTTOM,
       );
-
-      // Get.to(() => const HomePage());
     }
   }
 
-///////////////////////////////
+//showDialogueBox for adding new task
+
   showDialogueBox() {
     return Get.defaultDialog(
       cancel: ElevatedButton(
@@ -102,7 +98,6 @@ class ToDoControllers extends GetxController {
         ),
         onPressed: () {
           if (!formKey.currentState!.validate()) {
-            log('controller is empty');
             return;
           } else {
             addTodo();
@@ -117,7 +112,6 @@ class ToDoControllers extends GetxController {
   }
 
   addTodo() async {
-    log('AddTodo called');
     if (textController.text.isNotEmpty) {
       final response = await ToDoServices().addTodos(textController.text);
       final id = response['data']['insert_todos']['returning'][0]['id'];
@@ -162,11 +156,14 @@ class ToDoControllers extends GetxController {
         ),
       );
 
-      Get.snackbar('Done', '$title is completed',
+      Get.snackbar(
+        'Task Finished',
+        '$title is Finished',
         duration: const Duration(seconds: 2),
-      backgroundColor: AppColors.primaryColor,
-      colorText: AppColors.whiteColor,
-      snackPosition: SnackPosition.BOTTOM,);
+        backgroundColor: AppColors.primaryColor,
+        colorText: AppColors.whiteColor,
+        snackPosition: SnackPosition.BOTTOM,
+      );
     } else {
       return null;
     }

@@ -1,0 +1,70 @@
+!! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+
+Dart Code extension: 3.66.0
+Flutter extension: 3.66.0 (not activated)
+
+App: Visual Studio Code
+Version: 1.78.2
+Platform: win
+
+HTTP_PROXY: undefined
+NO_PROXY: undefined
+
+Logging Categories:
+    FlutterDaemon
+
+Tue Jun 06 2023 [10:12:36 GMT+0530 (India Standard Time)] Log file started
+[10:12:36 AM] [FlutterDaemon] [Info] Spawning C:\Users\User\Downloads\flutter\bin\flutter.bat with args ["daemon"]
+[10:12:36 AM] [FlutterDaemon] [Info] ..  in C:\Users\User\Downloads\flutter
+[10:12:36 AM] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[10:12:36 AM] [FlutterDaemon] [Info]     PID: 12620
+[10:13:11 AM] [FlutterDaemon] [Info] <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":12300}}]
+[10:13:11 AM] [FlutterDaemon] [Info] ==> [{"id":"1","method":"device.enable"}]
+[10:13:11 AM] [FlutterDaemon] [Info] ==> [{"id":"2","method":"emulator.getEmulators"}]
+[10:13:11 AM] [FlutterDaemon] [Info] ==> [{"id":"3","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[10:13:12 AM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"A new version of Flutter is available!\n\nTo update to the latest version, run \"flutter upgrade\"."}}]
+[10:13:12 AM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"Starting device daemon..."}}]
+[10:13:12 AM] [FlutterDaemon] [Info] <== [{"id":"1"}]
+[10:13:12 AM] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[10:13:12 AM] [FlutterDaemon] [Info] ==> [{"id":"4","method":"emulator.getEmulators"}]
+[10:13:14 AM] [FlutterDaemon] [Info] <== [{"id":"2","result":[{"id":"Pixel_3_API_30","name":"Pixel 3 API 30","category":"mobile","platformType":"android"}]}]
+[10:13:15 AM] [FlutterDaemon] [Info] <== [{"id":"4","result":[{"id":"Pixel_3_API_30","name":"Pixel 3 API 30","category":"mobile","platformType":"android"}]}]
+[10:13:16 AM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"windows","name":"Windows","platform":"windows-x64","emulator":false,"category":"desktop","platformType":"windows","ephemeral":false,"emulatorId":null,"sdk":"Microsoft Windows [Version 10.0.19044.2965]","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
+[10:13:19 AM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"chrome","name":"Chrome","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null,"sdk":"Google Chrome 113.0.5672.129","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":false,"hardwareRendering":true,"startPaused":true}}}]
+[10:13:19 AM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"edge","name":"Edge","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null,"sdk":"Microsoft Edge 114.0.1823.37","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":false,"hardwareRendering":true,"startPaused":true}}}]
+[10:13:22 AM] [FlutterDaemon] [Info] ==> [{"id":"5","method":"emulator.launch","params":{"emulatorId":"Pixel_3_API_30","coldBoot":false}}]
+[10:13:27 AM] [FlutterDaemon] [Info] <== [{"id":"5"}]
+[10:13:58 AM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"emulator-5554","name":"emulator-5554","platform":"android-x86","emulator":true,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":"Pixel_3_API_30","sdk":"Android 11 (API 30)","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":true,"fastStart":true,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
+[10:13:58 AM] [FlutterDaemon] [Info] ==> [{"id":"6","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[10:13:58 AM] [FlutterDaemon] [Info] <== [{"id":"6","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[10:14:37 AM] [FlutterDaemon] [Info] ==> [{"id":"7","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[10:14:37 AM] [FlutterDaemon] [Info] <== [{"id":"7","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[10:14:37 AM] [FlutterDaemon] [Info] ==> [{"id":"8","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[10:14:38 AM] [FlutterDaemon] [Info] <== [{"id":"8","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[11:09:00 AM] [FlutterDaemon] [Info] ==> [{"id":"9","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[11:09:00 AM] [FlutterDaemon] [Info] <== [{"id":"9","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[11:09:00 AM] [FlutterDaemon] [Info] ==> [{"id":"10","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[11:09:00 AM] [FlutterDaemon] [Info] <== [{"id":"10","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[11:19:38 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)] lib/controllers/todo_controller.dart:50:43: Error: The method 'delteTodo' isn't defined for the class 'ToDoServices'.
+[11:19:38 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)]  - 'ToDoServices' is from 'package:graphql_todo/controllers/todo_services.dart' ('lib/controllers/todo_services.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'delteTodo'.
+    final response = await ToDoServices().delteTodo(id);
+                                          ^^^^^^^^^
+[12:25:57 PM] [VmService] [Error] [Flutter (Pixel 3 API 30)] Cannot add breakpoint
+[3:58:16 PM] [FlutterDaemon] [Info] ==> [{"id":"11","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[3:58:16 PM] [FlutterDaemon] [Info] <== [{"id":"11","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[3:58:16 PM] [FlutterDaemon] [Info] ==> [{"id":"12","method":"emulator.getEmulators"}]
+[3:58:16 PM] [FlutterDaemon] [Info] <== [{"id":"12","result":[{"id":"Pixel_3_API_30","name":"Pixel 3 API 30","category":"mobile","platformType":"android"}]}]
+[3:58:20 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"Error 1 retrieving device properties for sdk gphone x86:"}}]
+[3:58:20 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"adb.exe: device 'emulator-5554' not found\r\n"}}]
+[3:58:20 PM] [FlutterDaemon] [Info] <== [{"event":"device.removed","params":{"id":"emulator-5554","name":"sdk gphone x86","platform":"android-arm","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null,"sdk":"Android null (API null)","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":true,"fastStart":true,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
+[3:58:23 PM] [FlutterDaemon] [Info] ==> [{"id":"13","method":"emulator.launch","params":{"emulatorId":"Pixel_3_API_30","coldBoot":false}}]
+[3:58:26 PM] [FlutterDaemon] [Info] <== [{"id":"13"}]
+[3:58:38 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"emulator-5554","name":"sdk gphone x86","platform":"android-x86","emulator":true,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":"Pixel_3_API_30","sdk":"Android 11 (API 30)","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":true,"fastStart":true,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
+[3:58:38 PM] [FlutterDaemon] [Info] ==> [{"id":"14","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[3:58:38 PM] [FlutterDaemon] [Info] <== [{"id":"14","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[3:58:42 PM] [FlutterDaemon] [Info] ==> [{"id":"15","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[3:58:42 PM] [FlutterDaemon] [Info] <== [{"id":"15","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[3:58:42 PM] [FlutterDaemon] [Info] ==> [{"id":"16","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\User\\Desktop\\graphql_todo"}}]
+[3:58:42 PM] [FlutterDaemon] [Info] <== [{"id":"16","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[4:46:56 PM] [VmService] [Error] [Flutter (Pixel 3 API 30)] Cannot add breakpoint
