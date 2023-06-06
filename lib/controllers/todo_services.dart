@@ -35,7 +35,7 @@ class ToDoServices {
     return null;
   }
 
-  delteTodo(int id) async {
+  deleteTodo(int id) async {
     try {
       dio.Response response = await graphqlClient.post('', data: {
         "query": Queries.deleteTodo,

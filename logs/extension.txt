@@ -1,0 +1,362 @@
+!! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+
+Dart Code extension: 3.66.0
+Flutter extension: 3.66.0 (not activated)
+
+App: Visual Studio Code
+Version: 1.78.2
+Platform: win
+
+HTTP_PROXY: undefined
+NO_PROXY: undefined
+
+Logging Categories:
+    General
+
+Tue Jun 06 2023 [10:12:01 GMT+0530 (India Standard Time)] Log file started
+[10:12:01 AM] [General] [Info] Searching for SDKs...
+[10:12:01 AM] [General] [Info] Environment PATH:
+[10:12:01 AM] [General] [Info]     C:\Program Files\Common Files\Oracle\Java\javapath
+[10:12:01 AM] [General] [Info]     C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+[10:12:01 AM] [General] [Info]     C:\Windows\system32
+[10:12:01 AM] [General] [Info]     C:\Windows
+[10:12:01 AM] [General] [Info]     C:\Windows\System32\Wbem
+[10:12:01 AM] [General] [Info]     C:\Windows\System32\WindowsPowerShell\v1.0\
+[10:12:01 AM] [General] [Info]     C:\Windows\System32\OpenSSH\
+[10:12:01 AM] [General] [Info]     C:\Program Files\dotnet\
+[10:12:01 AM] [General] [Info]     C:\Program Files\Git\cmd
+[10:12:01 AM] [General] [Info]     C:\Program Files\nodejs\
+[10:12:01 AM] [General] [Info]     C:\Program Files\Git LFS
+[10:12:01 AM] [General] [Info]     C:\Users\User\AppData\Local\Microsoft\WindowsApps
+[10:12:01 AM] [General] [Info]     C:\mingw64\bin
+[10:12:01 AM] [General] [Info]     C:\Users\User\Downloads\flutter\bin
+[10:12:01 AM] [General] [Info]     C:\Users\User\Documents\flutter\bin
+[10:12:01 AM] [General] [Info]     C:\Users\User\.dotnet\tools
+[10:12:01 AM] [General] [Info]     C:\Users\User\AppData\Roaming\npm
+[10:12:01 AM] [General] [Info]     C:\Program Files\Java\jdk-19\bin
+[10:12:01 AM] [General] [Info]     C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin
+[10:12:01 AM] [General] [Info]     C:\Users\User\AppData\Local\GitHubDesktop\bin
+[10:12:36 AM] [General] [Info] Took 34578ms to search for projects (5 levels)
+[10:12:36 AM] [General] [Info] Took 92ms to filter out excluded projects (0 exclusion rules)
+[10:12:36 AM] [General] [Info] Found Flutter project at C:\Users\User\Desktop\graphql_todo:
+			Mobile? true
+			Web? false
+			Create Trigger? false
+			Flutter Repo? false
+[10:12:36 AM] [General] [Info] Searching for flutter.bat
+[10:12:36 AM] [General] [Info]     Looking for flutter.bat in:
+[10:12:36 AM] [General] [Info]         C:\Users\User\Desktop\graphql_todo
+[10:12:36 AM] [General] [Info]         C:\Users\User\Desktop\graphql_todo\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter\bin\
+[10:12:36 AM] [General] [Info]         C:\Users\User\Desktop\graphql_todo\.flutter
+[10:12:36 AM] [General] [Info]         C:\Users\User\Desktop\graphql_todo\.flutter\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\Desktop\graphql_todo\vendor\flutter
+[10:12:36 AM] [General] [Info]         C:\Users\User\Desktop\graphql_todo\vendor\flutter\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\flutter-sdk
+[10:12:36 AM] [General] [Info]         C:\Users\User\flutter-sdk\bin
+[10:12:36 AM] [General] [Info]         /google/flutter
+[10:12:36 AM] [General] [Info]         \google\flutter\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath
+[10:12:36 AM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+[10:12:36 AM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin
+[10:12:36 AM] [General] [Info]         C:\Windows\system32
+[10:12:36 AM] [General] [Info]         C:\Windows\system32\bin
+[10:12:36 AM] [General] [Info]         C:\Windows
+[10:12:36 AM] [General] [Info]         C:\Windows\bin
+[10:12:36 AM] [General] [Info]         C:\Windows\System32\Wbem
+[10:12:36 AM] [General] [Info]         C:\Windows\System32\Wbem\bin
+[10:12:36 AM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\
+[10:12:36 AM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\bin
+[10:12:36 AM] [General] [Info]         C:\Windows\System32\OpenSSH\
+[10:12:36 AM] [General] [Info]         C:\Windows\System32\OpenSSH\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files\dotnet\
+[10:12:36 AM] [General] [Info]         C:\Program Files\dotnet\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files\Git\cmd
+[10:12:36 AM] [General] [Info]         C:\Program Files\Git\cmd\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files\nodejs\
+[10:12:36 AM] [General] [Info]         C:\Program Files\nodejs\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files\Git LFS
+[10:12:36 AM] [General] [Info]         C:\Program Files\Git LFS\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\AppData\Local\Microsoft\WindowsApps
+[10:12:36 AM] [General] [Info]         C:\Users\User\AppData\Local\Microsoft\WindowsApps\bin
+[10:12:36 AM] [General] [Info]         C:\mingw64\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\Documents\flutter\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\.dotnet\tools
+[10:12:36 AM] [General] [Info]         C:\Users\User\.dotnet\tools\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\AppData\Roaming\npm
+[10:12:36 AM] [General] [Info]         C:\Users\User\AppData\Roaming\npm\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files\Java\jdk-19\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\AppData\Local\GitHubDesktop\bin
+[10:12:36 AM] [General] [Info]     Found at:
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter\bin\
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\Documents\flutter\bin
+[10:12:36 AM] [General] [Info]     Candidate paths to be post-filtered:
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter
+[10:12:36 AM] [General] [Info]         C:\Users\User\Documents\flutter
+[10:12:36 AM] [General] [Info]     Found at C:\Users\User\Downloads\flutter
+[10:12:36 AM] [General] [Info]     Returning SDK path C:\Users\User\Downloads\flutter for flutter.bat
+[10:12:36 AM] [General] [Info] Searching for dart.exe
+[10:12:36 AM] [General] [Info]     Looking for dart.exe in:
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter\bin\cache\dart-sdk
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter\bin\cache\dart-sdk\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath
+[10:12:36 AM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+[10:12:36 AM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin
+[10:12:36 AM] [General] [Info]         C:\Windows\system32
+[10:12:36 AM] [General] [Info]         C:\Windows\system32\bin
+[10:12:36 AM] [General] [Info]         C:\Windows
+[10:12:36 AM] [General] [Info]         C:\Windows\bin
+[10:12:36 AM] [General] [Info]         C:\Windows\System32\Wbem
+[10:12:36 AM] [General] [Info]         C:\Windows\System32\Wbem\bin
+[10:12:36 AM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\
+[10:12:36 AM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\bin
+[10:12:36 AM] [General] [Info]         C:\Windows\System32\OpenSSH\
+[10:12:36 AM] [General] [Info]         C:\Windows\System32\OpenSSH\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files\dotnet\
+[10:12:36 AM] [General] [Info]         C:\Program Files\dotnet\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files\Git\cmd
+[10:12:36 AM] [General] [Info]         C:\Program Files\Git\cmd\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files\nodejs\
+[10:12:36 AM] [General] [Info]         C:\Program Files\nodejs\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files\Git LFS
+[10:12:36 AM] [General] [Info]         C:\Program Files\Git LFS\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\AppData\Local\Microsoft\WindowsApps
+[10:12:36 AM] [General] [Info]         C:\Users\User\AppData\Local\Microsoft\WindowsApps\bin
+[10:12:36 AM] [General] [Info]         C:\mingw64\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\Documents\flutter\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\.dotnet\tools
+[10:12:36 AM] [General] [Info]         C:\Users\User\.dotnet\tools\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\AppData\Roaming\npm
+[10:12:36 AM] [General] [Info]         C:\Users\User\AppData\Roaming\npm\bin
+[10:12:36 AM] [General] [Info]         C:\Program Files\Java\jdk-19\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\AppData\Local\GitHubDesktop\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter\bin\cache\dart-sdk
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter\bin\cache\dart-sdk\bin
+[10:12:36 AM] [General] [Info]     Found at:
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter\bin\cache\dart-sdk\bin
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter\bin\cache\dart-sdk\bin
+[10:12:36 AM] [General] [Info]     Candidate paths to be post-filtered:
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter\bin\cache\dart-sdk
+[10:12:36 AM] [General] [Info]         C:\Users\User\Downloads\flutter\bin\cache\dart-sdk
+[10:12:36 AM] [General] [Info]     Found at C:\Users\User\Downloads\flutter\bin\cache\dart-sdk
+[10:12:36 AM] [General] [Info]     Returning SDK path C:\Users\User\Downloads\flutter\bin\cache\dart-sdk for dart.exe
+[10:12:36 AM] [General] [Info] Experiment random number is 97 for experiment 'sdkDaps'. Experiment is enabled for <= 30
+[10:12:36 AM] [General] [Info] Experiment 'sdkDaps' does not apply and will not be activated
+[10:12:36 AM] [General] [Info] Experiment random number is 97 for experiment 'sdkDaps'. Experiment is enabled for <= 10
+[10:12:36 AM] [General] [Info] Experiment 'sdkDaps' does not apply and will not be activated
+[10:12:36 AM] [General] [Info] !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+
+Dart Code extension: 3.66.0
+Flutter extension: 3.66.0 (not activated)
+
+App: Visual Studio Code
+Version: 1.78.2
+Platform: win
+
+Workspace type: Flutter
+Analyzer type: LSP
+Multi-root?: false
+
+Dart SDK:
+    Loc: C:\Users\User\Downloads\flutter\bin\cache\dart-sdk
+    Ver: 3.0.2
+Flutter SDK:
+    Loc: C:\Users\User\Downloads\flutter
+    Ver: 3.10.2
+
+HTTP_PROXY: undefined
+NO_PROXY: undefined
+[10:12:37 AM] [General] [Info] Returning cached results for project search
+[10:12:37 AM] [General] [Info] Activating Flutter extension for Flutter project...
+[10:12:38 AM] [General] [Info] Version last used for Pub is 3.0.2 (3.0.0), current is 3.0.2 (3.0.0)
+[10:12:38 AM] [General] [Info] Found 0 folders requiring "pub get" or "pub upgrade":
+[10:12:39 AM] [General] [Info] Loaded 20000 package names from vscode-userdata:/c%3A/Users/User/AppData/Roaming/Code/User/globalStorage/dart-code.dart-code/package_cache.json
+[10:12:39 AM] [General] [Info] Caching Pub package names from https://pub.dev...
+[10:12:41 AM] [General] [Info] !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+
+Dart Code extension: 3.66.0
+Flutter extension: 3.66.0 (activated)
+
+App: Visual Studio Code
+Version: 1.78.2
+Platform: win
+
+Workspace type: Flutter
+Analyzer type: LSP
+Multi-root?: false
+
+Dart SDK:
+    Loc: C:\Users\User\Downloads\flutter\bin\cache\dart-sdk
+    Ver: 3.0.2
+Flutter SDK:
+    Loc: C:\Users\User\Downloads\flutter
+    Ver: 3.10.2
+
+HTTP_PROXY: undefined
+NO_PROXY: undefined
+[10:12:44 AM] [General] [Info] Saved 20000 in vscode-userdata:/c%3A/Users/User/AppData/Roaming/Code/User/globalStorage/dart-code.dart-code/package_cache.json
+[10:13:10 AM] [General] [Info] Returning cached results for project search
+[10:13:11 AM] [General] [Info] Returning cached results for project search
+[10:13:11 AM] [General] [Info] Checking 1 projects for supported platforms
+[10:13:12 AM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
+[10:13:16 AM] [General] [Info] Returning cached promise for getSupportedPlatforms()
+[10:13:58 AM] [General] [Info] Saving emulator-5554 as preferred device
+[10:13:58 AM] [General] [Info] Returning cached results for project search
+[10:13:58 AM] [General] [Info] Checking 1 projects for supported platforms
+[10:13:58 AM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
+[10:14:37 AM] [General] [Info] Starting debug session...
+[10:14:37 AM] [General] [Info]     workspace: C:\Users\User\Desktop\graphql_todo
+[10:14:37 AM] [General] [Info] Setting cwd based on likely entry point: C:\Users\User\Desktop\graphql_todo
+[10:14:37 AM] [General] [Info] Using found common entry point: C:\Users\User\Desktop\graphql_todo\lib\main.dart
+[10:14:37 AM] [General] [Info] Using workspace as cwd: C:\Users\User\Desktop\graphql_todo
+[10:14:37 AM] [General] [Info] Detected launch project as Flutter
+[10:14:37 AM] [General] [Info] Using Flutter debug adapter for this session
+[10:14:38 AM] [General] [Info] Getting DevTools server address to pass to Flutter...
+[10:14:38 AM] [General] [Info] Checking for errors before launching
+[10:14:38 AM] [General] [Info] Debug session starting...
+    {
+        "dartCodeDebugSessionID": "session-b7004",
+        "type": "dart",
+        "request": "launch",
+        "program": "C:\\Users\\User\\Desktop\\graphql_todo\\lib\\main.dart",
+        "cwd": "C:\\Users\\User\\Desktop\\graphql_todo",
+        "name": "Flutter (Pixel 3 API 30)",
+        "deviceId": "emulator-5554",
+        "deviceName": "Pixel 3 API 30 (android-x86)",
+        "toolEnv": {
+            "FLUTTER_HOST": "VSCode",
+            "PUB_ENVIRONMENT": "vscode.dart-code"
+        },
+        "sendLogsToClient": false,
+        "sendCustomProgressEvents": true,
+        "additionalProjectPaths": [
+            "C:\\Users\\User\\Desktop\\graphql_todo"
+        ],
+        "args": [],
+        "vmAdditionalArgs": [],
+        "toolArgs": [
+            "-d",
+            "emulator-5554",
+            "--devtools-server-address",
+            "http://127.0.0.1:9100/"
+        ],
+        "vmServicePort": 0,
+        "dartSdkPath": "C:\\Users\\User\\Downloads\\flutter\\bin\\cache\\dart-sdk",
+        "vmServiceLogFile": "C:\\Users\\User\\Desktop\\graphql_todo\\logs\\observatory.txt",
+        "maxLogLineLength": 2000,
+        "dartTestLogFile": "C:\\Users\\User\\Desktop\\graphql_todo\\logs\\dart_test.txt",
+        "debugSdkLibraries": false,
+        "debugExternalPackageLibraries": false,
+        "showDartDeveloperLogs": true,
+        "evaluateGettersInDebugViews": true,
+        "evaluateToStringInDebugViews": true,
+        "flutterSdkPath": "C:\\Users\\User\\Downloads\\flutter",
+        "useInspectorNotificationsForWidgetErrors": true,
+        "flutterRunLogFile": "C:\\Users\\User\\Desktop\\graphql_todo\\logs\\flutter_run.txt",
+        "flutterTestLogFile": "C:\\Users\\User\\Desktop\\graphql_todo\\logs\\flutter_test.txt",
+        "showMemoryUsage": false,
+        "debuggerType": 2
+    }
+[10:14:38 AM] [General] [Info] Using flutter debugger for Flutter
+[10:14:38 AM] [General] [Info] SDK DAP setting is false, set by sdkDaps experiment
+[10:14:38 AM] [General] [Info] Running debugger via node with c:\Users\User\.vscode\extensions\dart-code.dart-code-3.66.0\out\dist\debug.js    flutter
+[10:14:40 AM] [General] [Info] Did not find session 63d953db-27da-49b1-943b-d16fe2dac4ee to handle dart.progressStart. There were 0 sessions:
+[10:14:40 AM] [General] [Info] Event will be queued and processed when the session start event fires
+[10:14:41 AM] [General] [Info] Processing delayed event dart.progressStart for session 63d953db-27da-49b1-943b-d16fe2dac4ee
+[10:20:04 AM] [General] [Info] Took 667ms to search for projects (5 levels)
+[10:20:04 AM] [General] [Info] Took 112ms to filter out excluded projects (0 exclusion rules)
+[10:25:02 AM] [General] [Info] Returning cached results for project search
+[10:30:45 AM] [General] [Info] Took 582ms to search for projects (5 levels)
+[10:30:45 AM] [General] [Info] Took 34ms to filter out excluded projects (0 exclusion rules)
+[10:45:52 AM] [General] [Info] Took 1047ms to search for projects (5 levels)
+[10:45:52 AM] [General] [Info] Took 23ms to filter out excluded projects (0 exclusion rules)
+[10:55:50 AM] [General] [Info] Took 387ms to search for projects (5 levels)
+[10:55:50 AM] [General] [Info] Took 11ms to filter out excluded projects (0 exclusion rules)
+[10:59:20 AM] [General] [Info] Returning cached results for project search
+[11:03:00 AM] [General] [Info] Took 316ms to search for projects (5 levels)
+[11:03:00 AM] [General] [Info] Took 32ms to filter out excluded projects (0 exclusion rules)
+[11:04:25 AM] [General] [Info] Returning cached results for project search
+[11:04:38 AM] [General] [Info] Returning cached results for project search
+[11:05:34 AM] [General] [Info] Returning cached results for project search
+[11:07:33 AM] [General] [Info] Returning cached results for project search
+[11:09:00 AM] [General] [Info] Starting debug session...
+[11:09:00 AM] [General] [Info]     workspace: C:\Users\User\Desktop\graphql_todo
+[11:09:00 AM] [General] [Info] Setting cwd based on likely entry point: C:\Users\User\Desktop\graphql_todo
+[11:09:00 AM] [General] [Info] Using found common entry point: C:\Users\User\Desktop\graphql_todo\lib\main.dart
+[11:09:00 AM] [General] [Info] Using workspace as cwd: C:\Users\User\Desktop\graphql_todo
+[11:09:00 AM] [General] [Info] Detected launch project as Flutter
+[11:09:00 AM] [General] [Info] Using Flutter debug adapter for this session
+[11:09:00 AM] [General] [Info] Getting DevTools server address to pass to Flutter...
+[11:09:00 AM] [General] [Info] Checking for errors before launching
+[11:09:00 AM] [General] [Info] Debug session starting...
+    {
+        "dartCodeDebugSessionID": "session-226d9",
+        "type": "dart",
+        "request": "launch",
+        "program": "C:\\Users\\User\\Desktop\\graphql_todo\\lib\\main.dart",
+        "cwd": "C:\\Users\\User\\Desktop\\graphql_todo",
+        "name": "Flutter (Pixel 3 API 30)",
+        "deviceId": "emulator-5554",
+        "deviceName": "Pixel 3 API 30 (android-x86)",
+        "toolEnv": {
+            "FLUTTER_HOST": "VSCode",
+            "PUB_ENVIRONMENT": "vscode.dart-code"
+        },
+        "sendLogsToClient": false,
+        "sendCustomProgressEvents": true,
+        "additionalProjectPaths": [
+            "C:\\Users\\User\\Desktop\\graphql_todo"
+        ],
+        "args": [],
+        "vmAdditionalArgs": [],
+        "toolArgs": [
+            "-d",
+            "emulator-5554",
+            "--devtools-server-address",
+            "http://127.0.0.1:9100/"
+        ],
+        "vmServicePort": 0,
+        "dartSdkPath": "C:\\Users\\User\\Downloads\\flutter\\bin\\cache\\dart-sdk",
+        "vmServiceLogFile": "C:\\Users\\User\\Desktop\\graphql_todo\\logs\\observatory.txt",
+        "maxLogLineLength": 2000,
+        "dartTestLogFile": "C:\\Users\\User\\Desktop\\graphql_todo\\logs\\dart_test.txt",
+        "debugSdkLibraries": false,
+        "debugExternalPackageLibraries": false,
+        "showDartDeveloperLogs": true,
+        "evaluateGettersInDebugViews": true,
+        "evaluateToStringInDebugViews": true,
+        "flutterSdkPath": "C:\\Users\\User\\Downloads\\flutter",
+        "useInspectorNotificationsForWidgetErrors": true,
+        "flutterRunLogFile": "C:\\Users\\User\\Desktop\\graphql_todo\\logs\\flutter_run.txt",
+        "flutterTestLogFile": "C:\\Users\\User\\Desktop\\graphql_todo\\logs\\flutter_test.txt",
+        "showMemoryUsage": false,
+        "debuggerType": 2
+    }
+[11:09:00 AM] [General] [Info] Using flutter debugger for Flutter
+[11:09:00 AM] [General] [Info] SDK DAP setting is false, set by sdkDaps experiment
+[11:09:00 AM] [General] [Info] Running debugger via node with c:\Users\User\.vscode\extensions\dart-code.dart-code-3.66.0\out\dist\debug.js    flutter
+[11:09:02 AM] [General] [Info] Did not find session 23a2c883-a72a-437f-b83c-b266b6aff9db to handle dart.progressStart. There were 0 sessions:
+[11:09:02 AM] [General] [Info] Event will be queued and processed when the session start event fires
+[11:09:02 AM] [General] [Info] Processing delayed event dart.progressStart for session 23a2c883-a72a-437f-b83c-b266b6aff9db
+[11:10:36 AM] [General] [Info] Took 567ms to search for projects (5 levels)
+[11:10:36 AM] [General] [Info] Took 8ms to filter out excluded projects (0 exclusion rules)
+[11:12:00 AM] [General] [Info] Returning cached results for project search
+[11:12:54 AM] [General] [Info] Returning cached results for project search
+[11:16:12 AM] [General] [Info] Took 744ms to search for projects (5 levels)
+[11:16:12 AM] [General] [Info] Took 142ms to filter out excluded projects (0 exclusion rules)
+[11:17:22 AM] [General] [Info] Returning cached results for project search
+[11:19:38 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)] lib/controllers/todo_controller.dart:50:43: Error: The method 'delteTodo' isn't defined for the class 'ToDoServices'.
+[11:19:38 AM] [FlutterRun] [Error] [Flutter (Pixel 3 API 30)]  - 'ToDoServices' is from 'package:graphql_todo/controllers/todo_services.dart' ('lib/controllers/todo_services.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'delteTodo'.
+    final response = await ToDoServices().delteTodo(id);
+                                          ^^^^^^^^^
+[11:21:21 AM] [General] [Info] Took 311ms to search for projects (5 levels)
+[11:21:21 AM] [General] [Info] Took 8ms to filter out excluded projects (0 exclusion rules)

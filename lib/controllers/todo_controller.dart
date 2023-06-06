@@ -2,7 +2,6 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:graphql_todo/models/todo_model.dart';
-import 'package:graphql_todo/screens/home_page/home_screen.dart';
 import 'package:graphql_todo/utils/constants.dart';
 import '../utils/reusables.dart';
 import 'todo_services.dart';
@@ -23,6 +22,7 @@ class ToDoControllers extends GetxController {
 
   getTodos() async {
     isLoading.toggle();
+    log('entered getTodo');
     final response = await ToDoServices().getTodos();
     if (response != null) {
       isLoading.toggle();
@@ -30,23 +30,24 @@ class ToDoControllers extends GetxController {
       todoList(
         (response as List).map((e) => TodoModel.fromJson(e)).toList(),
       );
-
       allTodos.clear();
+      updatedTodos.clear();
       for (var element in todoList) {
-        // if (element.isCompleted == false) {
-        allTodos.add(element);
-
-        // } else {
-        //   updatedTodos.add(element);
-        // }
-      }
+        if (element.isCompleted == false) {
+        //   log('element update');               
+          allTodos.add(element);
+        }
+        else {
+          updatedTodos.add(element);
+        }                                                                                                                          
+      }  
     } else {
       log('Todo is Null');
     }
   }
 
   deleteTodo(int id, int index) async {
-    final response = await ToDoServices().delteTodo(id);
+    final response = await ToDoServices().deleteTodo(id);
     if (response.statusCode == 200) {
       allTodos.removeAt(index);
 
@@ -132,7 +133,7 @@ class ToDoControllers extends GetxController {
     } else {
       log('TextFiels is empty');
     }
-    Get.offAll(() => const HomePage());
+    Get.back();
     textController.clear();
     Get.snackbar(
       "Done",
@@ -146,11 +147,11 @@ class ToDoControllers extends GetxController {
 
   ////////////////////////
 
-  todoUpdated(int id, String title, int index) async {
+  updateTodo(int id, String title, int index) async {
     final response = await ToDoServices().updateTodo(id);
     if (response.statusCode == 200) {
       log(response.data.toString());
-      updatedTodos.removeAt(index);
+      allTodos.removeAt(index);
       updatedTodos.insert(
         0,
         TodoModel(
@@ -160,7 +161,12 @@ class ToDoControllers extends GetxController {
           createdAt: DateTime.now(),
         ),
       );
-      Get.snackbar('Done', '$title is completed');
+
+      Get.snackbar('Done', '$title is completed',
+        duration: const Duration(seconds: 2),
+      backgroundColor: AppColors.primaryColor,
+      colorText: AppColors.whiteColor,
+      snackPosition: SnackPosition.BOTTOM,);
     } else {
       return null;
     }

@@ -54,31 +54,45 @@ class HomePage extends StatelessWidget {
                                 width: Get.width,
                                 child: Card(
                                   child: ListTile(
-                                    title: text(
-                                        content: todoControllers
-                                            .allTodos[index].title,
-                                        fontWeight: FontWeight.w500,
-                                        size: 18),
-                                    subtitle: text(
-                                      content: todoControllers
-                                          .allTodos[index].createdAt
-                                          .toString(),
-                                      size: 12,
-                                      fontWeight: FontWeight.w400,
-                                    ),
-                                    trailing: InkWell(
-                                      onTap: () async {
-                                        todoControllers.deleteTodo(
+                                      leading: InkWell(
+                                        onTap: () {
+                                          todoControllers.updateTodo(
                                             todoControllers.allTodos[index].id,
-                                            index);
-                                        await todoControllers.getTodos();
-                                      },
-                                      child: icon(
-                                        iconData: Icons.delete_forever,
-                                        color: Colors.red,
+                                            todoControllers
+                                                .allTodos[index].title,
+                                            index,
+                                          );
+                                        },
+                                        child: icon(
+                                          iconData: Icons.done,
+                                          color: AppColors.greenColor,
+                                        ),
                                       ),
-                                    ),
-                                  ),
+                                      title: text(
+                                          content: todoControllers
+                                              .allTodos[index].title,
+                                          fontWeight: FontWeight.w500,
+                                          size: 18),
+                                      subtitle: text(
+                                        content: todoControllers
+                                            .allTodos[index].createdAt
+                                            .toString(),
+                                        size: 12,
+                                        fontWeight: FontWeight.w400,
+                                      ),
+                                      trailing: InkWell(
+                                        onTap: () async {
+                                          todoControllers.deleteTodo(
+                                              todoControllers
+                                                  .allTodos[index].id,
+                                              index);
+                                          await todoControllers.getTodos();
+                                        },
+                                        child: icon(
+                                          iconData: Icons.delete_forever,
+                                          color: Colors.red,
+                                        ),
+                                      )),
                                 ),
                               ),
                             );
